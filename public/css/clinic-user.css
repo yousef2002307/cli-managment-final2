@@ -1,0 +1,111 @@
+.pakages {
+    width: 100%;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, .01) 0 0 1px;
+}
+
+.pt-140 {
+    padding-top: 140px;
+}
+
+.mb-80 {
+    margin-bottom: 80px;
+}
+
+
+
+.section_title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 45px;
+    /* line-height: 0.75; */
+    font-family: "Anta", sans-serif;
+    /* font-family: "Poppins", sans-serif; */
+}
+
+.section_subtitle {
+    font-size: 11px;
+    font-weight: 600;
+    color: #b4b3b3;
+    line-height: 0.75;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    margin-top: 23px;
+
+}
+
+.h-500 {
+    height: 500px;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.pb-80 {
+    padding-bottom: 100px;
+}
+
+
+.package_item1 {
+    /* bg-gradient */
+    /* padding: 50px; */
+    padding: 25px;
+    margin-bottom: 55px;
+    height: 500px;
+}
+
+.pack-img1 {
+    background-image: url("2297_R0lVIEpFTiA3ODgtMDE_50.jpg");
+    background-size: cover;
+}
+
+.pack-img2 {
+    background-image: url("home-right.png.webp");
+    background-size: cover;
+}
+
+.pack-img3 {
+    background-image: url("increased-revenue-profit-sales-data-260nw-1952364367.webp");
+    background-size: cover;
+}
+
+
+.icon_box_text {
+    font-size: 14px;
+    font-weight: 500;
+    color: #b4b3b3;
+    line-height: 2.14;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.theme_btn_two {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 30px;
+    background: #222222;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 13px 29px;
+    text-decoration: none;
+}
+
+.color_b {
+    color: #000;
+}
+
+
+.mt-500 {
+    margin-top: 500px;
+    margin-left: 50px;
+}

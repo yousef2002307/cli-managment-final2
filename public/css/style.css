@@ -1,0 +1,677 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body.antialiased{
+    background-color: blueviolet;
+    position: relative;
+    display: block;
+    min-height: 100vh;
+    overflow-x: hidden;
+ backface-visibility: hidden;
+}
+body.antialiased:has(.home){
+    background-color: transparent;
+}
+body.antialiased .home{
+    background-color: transparent;
+    position: relative;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+body.antialiased .home .overlay{
+    background-color: blueviolet;
+    z-index: 1;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    border-radius: 50%;
+    backface-visibility: hidden;
+    transform-origin: right;
+      transform: scale(0);
+      
+    animation: identifier4 .5s linear   ;
+    animation-fill-mode: forwards;
+    -moz-animation: identifier4 .5s linear; /* Firefox prefix */
+    -moz-animation-fill-mode: forwards; /* Firefox prefix */
+   
+}
+
+@keyframes identifier4 {
+    0%{
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(500);
+    }
+    20%{
+        transform: scale(1000);
+    }
+    30%{
+        transform: scale(1500);
+    }
+    40%{
+        transform: scale(2000);
+    }
+    50%{
+        transform: scale(2500);
+    }
+    60%{
+        transform: scale(3000);
+    }
+    70%{
+        transform: scale(3500);
+    }
+  
+    80%{
+        transform: scale(4000);
+    }
+    90%{
+        transform: scale(4500);
+    }
+    100%{
+        transform: scale(10000);
+    }
+
+}
+nav.j-home{
+    display: flex;
+    width: 50%;
+    margin-left: auto;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+nav.j-home ul li a:visited,
+nav.j-home ul li a:link{
+    color: #fff;
+    text-decoration: none;
+}
+nav.j-home ul{
+    position: relative;
+    right: -118%;
+    backface-visibility: hidden;
+    animation: identifier3 .5s linear 2s  ;
+    animation-fill-mode: forwards;
+}
+@keyframes identifier3 {
+    0%{
+       right: -70%;
+    }
+    25%{
+        right: -50%;
+    }
+    50%{
+        right: -10%;
+    }
+    75%{
+        right: 6%;
+    }
+    100%{
+        right: 0%;
+    }
+
+}
+nav.j-home ul li{
+   
+
+    display: inline-block;
+    padding: 0 27px;
+    background-color: rgb(21, 40, 24);
+    height: 35px;
+    line-height: 35px;
+    display: flex-inline;
+    display: inline-flex;
+    margin-top: 20px;
+    margin-right: 18px;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+nav.j-home ul li:hover{
+    transform: translateY(3px);
+    background-color: rgb(28, 60, 33);
+}
+div.j-buttons{
+    position: absolute;
+    top: -20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   z-index: 3;
+    animation: identifier2 1s linear 1s  ;
+    animation-fill-mode: forwards;
+    backface-visibility: hidden;
+}
+@keyframes identifier2 {
+    0%{
+        top: -15%;
+    }
+    25%{
+        top: 15%;
+    }
+    50%{
+        top: 30%;
+    }
+    75%{
+        top: 60%;
+    }
+    100%{
+        top: 50%;
+    }
+
+}
+div.j-buttons button:first-of-type{
+    background-color: #fff;
+    padding: 10px 17px;
+    display: inline-block;
+    margin-right: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    box-shadow: 3px 0px 9px 6px rgba(82,17,6,.3);
+}
+div.j-buttons button:first-of-type a:link,
+div.j-buttons button:first-of-type a:visited{
+    color: #000;
+    text-decoration: none;
+}
+div.j-buttons button:last-of-type{
+    background-color: #222;
+    padding: 10px 17px;
+    display: inline-block;
+   color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-transform: capitalize;
+    font-weight: 700;
+    box-shadow: 3px 0px 9px 6px rgba(82,17,6,.3);
+}
+
+div.j-buttons button:last-of-type a:link,
+div.j-buttons button:last-of-type a:visited{
+    color: #fff;
+    text-decoration: none;
+}
+body .side-bar{
+overflow-y: scroll;
+
+overflow-x: hidden;
+}
+body.dark{
+    background-color: #000;
+}
+.courses .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: stretch;
+}
+section.xxx{
+        padding: 0px 60px;
+        overflow: hidden;
+}
+.courses .box-container .box {
+    border-radius: .5rem;
+    background-color: var(--white);
+    padding: 2rem;
+    position: relative;
+}
+.courses .box-container .box .tutor span{
+    font-size: 15px;
+}
+body.dark .courses label{
+    color: #fff;
+}
+.star-rating {
+    display: flex;
+    flex-direction: row;
+    gap: 5px; /* Adjust gap between stars */
+  }
+  
+  .star-icon {
+    font-size: 24px; /* Adjust star size */
+    color: #ccc; /* Default color for inactive stars */
+  }
+  
+  .star-rating .star-icon.active {
+    color: gold; /* Color for active stars */
+  }
+  .table tbody td.status .non-active {
+    background: #f1b0b7;
+    color: #b21f2d;
+}
+.table tbody td.status .non-active:after {
+    background: #b21f2d;
+}
+i.fa.fa-close{
+    font-size: 22px;
+}
+body.dark select{
+    background-color: #000;
+    color: #fff;
+}
+body.dark button[type="submit"]{
+    background-color: #000;
+    color: #fff;
+}
+.edit{
+    width: 100%;
+}
+.chatbot-toggler{
+    position: absolute;
+    top: 22%;
+    left: 117%;
+}
+.chatbot {
+    position: fixed;
+    right: 35px;
+    bottom: 54px;
+}
+
+
+section.jo4 form{
+    flex-wrap: wrap;
+    width: 66%;
+    margin: 50px auto;
+}
+section.jo4 form .first{
+    width: 45%;
+    margin-right: 5%;
+}
+section.jo4 form .sec{
+    width: 50%;
+}
+section.jo4 form .button{
+  
+    width: 100%;
+   
+}
+section.jo4 form .button input{
+    display: block;
+    width: 50%;
+    background-color: #d5daf1;
+    color: #000;
+    margin: auto;
+}
+section.jo4 .title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 22px;
+}
+section.jo4 .title::before{
+    width: 20px;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: #ffc6c6;
+}
+section.jo4 .form-control{
+    margin-bottom: 25px;
+}
+section.jocards .jocard{
+    width: 450px;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 80px 0 40px 0;
+    margin: 50px auto;
+    box-shadow: 2px 2px 9px #786f6f;
+    position: relative;
+    text-align: center;
+}
+section.jocards .jocard strong:last-of-type{
+    margin-bottom: 22px;
+}
+section.jocards .jocard img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+section.jocards .jocard span{
+    color: #ff4c4c;
+    font-size: 23px;
+    font-weight: 500;
+    position: absolute;
+    top: 2px;
+    right: 18px;
+}
+section.jocards .jo22{
+    text-align: center;
+}
+
+
+
+
+section.jo0 .d-flex{
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+section.jo0 .d-flex .item{
+    width: 46%;
+    background-color: #a8a8a8;
+    margin-bottom: 30px;
+    padding: 21px 34px;
+    border-radius: 10px;
+    text-align: center;
+}
+section.jo0 .d-flex .item h2{
+    color: #fff;
+}
+section .jo0 .d-flex .item span{
+    color: #fff;
+    display: block;
+    font-size: 30px;
+}
+input{
+    position: relative !important;
+}
+div:has(> input){
+    position: relative !important;
+}
+div .star{
+    color: red;
+    font-size: 25px;
+    position: absolute;
+    top: 25px;
+    right: 5px;
+}
+
+body.dark .form-control{
+
+    background-color: #333 !important;
+border: navajowhite !important;
+color: #fff !important;
+}
+body.dark .form-control ~ i{
+color: #fff;
+}
+body.dark .form-group label{
+    color: #fff;
+}
+body.dark .heading-section{
+    color: #fff;
+}
+body.dark .table td{
+    color: #727272 !important;
+}
+.table-wrap {
+    overflow-x: hidden;
+}
+body.dark .page-item.disabled .page-link {
+    color: #fff;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #333;
+    border-color: #333;
+}
+body.dark .page-item.active .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #050606;
+    border-color: #000;
+}
+body.dark a.page-link{
+    background: #333;
+    border: 1px solid #333;
+    color: #fff;
+}
+body.dark .exa{
+    background-color: #fff !important;
+    color: #000 !important;
+}
+table td a.inf{
+    padding: 5px 11px;
+}
+.body.dark .xt{
+    color: #fff !important;
+}
+.messages{
+   
+    background-color: #a3359c;
+    color: #ddd;
+    
+ 
+  
+    transition: all .5s ease-in-out;
+    overflow-y:scroll ;
+}
+span.num{
+    position: absolute;
+    top: -15px;
+    left: 0;
+    border-radius: 50%;
+    background-color: black;
+    /* padding: 9px; */
+    color: red;
+    width: 23px;
+    height: 26px;
+    font-size: 15px;
+    line-height: 26px;
+}
+.messages.show2{
+    display: block;
+}
+.messages p{
+    color: #fff;
+}
+.messages .message-right{
+    text-align: right;
+}
+.form3{
+    display: flex;
+    width: 100%;
+
+
+}
+.messages h6{
+    font-size: 24px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+.form3 input{
+    flex: 1;
+}
+.form3.show2{
+    display: flex;
+}
+.act-green{
+    color: green;
+}
+.act-red{
+    color: red;
+}
+
+
+.progress {
+    --progress: 0%;
+    
+    width: 500px;
+    height: 50px;
+    margin: 9em auto;
+    border: 1px solid #fff;
+    padding: 12px 10px;
+    box-shadow: 0 0 10px #aaa;
+  }
+  
+  .progress .bar {
+    width: var(--progress);
+    height: 100%;
+    background: linear-gradient(gold, #c85, gold);
+    background-repeat: repeat;
+    box-shadow: 0 0 10px 0px orange;
+    animation: 
+      shine 4s ease-in infinite,
+      end 1s ease-out 1 7s;
+    transition: width 3s ease 3s;
+  }
+  
+  @property --progress {
+    syntax: "<length>";
+    initial-value: 0%;
+    inherits: true;
+  }
+  
+  @keyframes shine {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 50px; }
+  }
+  
+  @keyframes end {
+    0%, 100% { box-shadow: 0 0 10px 0px orange; }
+    50% { box-shadow: 0 0 15px 5px orange; }
+  }
+  .table tbody th, .table tbody td {
+    border: none;
+    padding: 10px !important;
+    font-size: 14px;
+    background: #fff;
+    vertical-align: middle;
+}
+
+.messages {
+    height: 300px;  /* Adjust message area height */
+    overflow-y: scroll;  /* Enable scrolling for long chat history */
+    background-color: #f5f5f5;  /* Light background for messages */
+    border-bottom: 1px solid #ddd;  /* Border between messages and form */
+  }
+  
+  .message-left,
+  .message-right {
+    margin: 10px 0;  /* Space between messages */
+    padding: 15px;  /* Padding within messages */
+    border-radius: 10px;  /* Rounded corners for messages */
+  }
+  .messages span{
+    display: block;
+  }
+  
+  .message-left {
+    background-color: #e0ffff;  /* Light blue for sender messages */
+    color: #333;  /* Darker text for sender messages */
+    align-self: flex-start;  /* Left alignment for sender messages */
+  }
+  
+  .message-right {
+    background-color: #fff;  /* White background for recipient messages */
+    color: #333;  /* Darker text for recipient messages */
+    align-self: flex-end;  /* Right alignment for recipient messages */
+  }
+  
+  .form {
+    display: flex;  /* Align input and button horizontally */
+  }
+  
+  .form input {
+    flex: 1;  /* Expand input to fill most of the form area */
+    border: 1px solid #ccc;  /* Input border */
+    border-radius: 5px;  /* Rounded corners for input */
+    padding: 10px;  /* Input padding */
+  }
+  
+  .form button {
+    background-color: #4CAF50;  /* Green button color */
+    color: white;  /* White text for button */
+    border: none;  /* Remove button border */
+    border-radius: 5px;  /* Rounded corners for button */
+    padding: 10px 20px; /* Button padding */
+    cursor: pointer;  /* Pointer cursor on hover */
+  }
+  
+  .form button:hover {
+    background-color: #3e8e41;  /* Darker green on hover */
+  }
+  .form221{
+    text-align: center;
+    margin: 40px 0;
+  }
+    /* CSS styling for the button */
+    .google-button {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        padding: 10px 20px;
+        background-color: #DB4437;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+    
+      .google-button:hover {
+        background-color: #DB4437;
+      }
+    
+      .google-button:active {
+        background-color: #DB4437;
+      }
+
+
+
+
+
+
+
+.gridjo{
+ display: grid;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: 45% 45%;
+    grid-gap: 5% 5%;
+    margin-top: 78px;
+}
+.gridjo > .item{
+    background-color: #c3ffe0;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #655d5d;
+}
+.cliview{
+    display: grid;
+    /* grid-template-rows: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
+}
+
+.report{
+    top: 50%;
+    position: fixed;
+    right: -5px;
+    z-index: 7777777;
+    cursor: pointer;
+    padding: 10px 17px;
+    border-radius: 6px;
+    background-color: #000;
+    color: #ddd;
+    font-size: 17px;
+}
+.report2 .form-group{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.report2 .btn{
+    background-color: #212529;
+    color: #fff;
+}
